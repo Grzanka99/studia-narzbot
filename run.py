@@ -3,7 +3,7 @@ from discord.ext import commands
 from data import token
 
 
-client = commands.Bot(command_prefix='>')
+client = commands.Bot(command_prefix='~')   #Jaruszewski tu był
 
 
 @client.event
