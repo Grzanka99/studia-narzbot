@@ -25,7 +25,7 @@ async def hello(ctx):
 
 @client.command(pass_context=True)
 async def kys(ctx):
-    await ctx.send("https://www.ascii-art-generator.org/")
+    await ctx.send("https://discordemoji.com/assets/emoji/kys.png")
 
 
 
