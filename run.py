@@ -7,6 +7,7 @@ from hello import say_hello
 from kys import run_kys
 from doit import do_it
 from overwatch import run_overwatch
+from timeFn import run_time
 
 client = commands.Bot(command_prefix='~')  # Jaruszewski tu był
 
@@ -40,5 +41,9 @@ async def doit(ctx):
 async def overwatch(ctx):
     await run_overwatch(ctx)
 
+
+@client.command(pass_context=True)
+async def time(ctx):
+    await run_time(ctx)
 
 client.run(token)
