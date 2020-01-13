@@ -3,6 +3,7 @@ from discord.ext import commands
 from data import token
 
 from ping import ping_run
+from hello import say_hello
 
 client = commands.Bot(command_prefix='~')  # Jaruszewski tu był
 
@@ -15,6 +16,7 @@ async def on_ready():
 @client.command(pass_context=True)
 async def ping(ctx):
     await ping_run(ctx)
+
 
 @client.command(pass_context=True)
 async def hello(ctx):
