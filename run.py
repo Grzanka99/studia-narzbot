@@ -19,5 +19,5 @@ async def ping(ctx):
 @client.command(pass_context=True)
 async def hello(ctx):
     await say_hello(ctx)
-    
+
 client.run(token)
