@@ -3,7 +3,7 @@ from discord.ext import commands
 from data import token
 
 
-client = commands.Bot(command_prefix='~')   #Jaruszewski tu był
+client = commands.Bot(command_prefix='~')  # Jaruszewski tu był
 
 
 @client.event
@@ -13,7 +13,7 @@ async def on_ready():
 
 @client.command(pass_context=True)
 async def ping(ctx):
-    await ctx.send("pong!")
+    await ctx.send("asdasd!")
 
 
 client.run(token)
