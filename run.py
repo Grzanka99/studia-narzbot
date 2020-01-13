@@ -30,7 +30,7 @@ async def hello(ctx):
 async def kys(ctx):
     await run_kys(ctx)
 
-client.run(token)
+
 @client.command(pass_context=True)
 async def doit(ctx):
     await do_it(ctx)
