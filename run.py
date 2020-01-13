@@ -4,6 +4,7 @@ from data import token
 
 from ping import ping_run
 from hello import say_hello
+from doit import do_it
 
 client = commands.Bot(command_prefix='~')  # Jaruszewski tu był
 
@@ -21,5 +22,9 @@ async def ping(ctx):
 @client.command(pass_context=True)
 async def hello(ctx):
     await say_hello(ctx)
+
+@client.command(pass_context=True)
+async def doit(ctx):
+    await do_it(ctx)
 
 client.run(token)
