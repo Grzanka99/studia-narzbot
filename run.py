@@ -4,6 +4,7 @@ from data import token
 
 from ping import ping_run
 from hello import say_hello
+from kys import run_kys
 
 client = commands.Bot(command_prefix='~')  # Jaruszewski tu był
 
@@ -25,8 +26,6 @@ async def hello(ctx):
 
 @client.command(pass_context=True)
 async def kys(ctx):
-    await ctx.send("https://discordemoji.com/assets/emoji/kys.png")
-
-
+    await run_kys(ctx)
 
 client.run(token)
